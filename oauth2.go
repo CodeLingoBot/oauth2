@@ -237,6 +237,7 @@ type tokenRefresher struct {
 	refreshToken string
 }
 
+// Token; 
 // WARNING: Token is not safe for concurrent access, as it
 // updates the tokenRefresher's refreshToken field.
 // Within this package, it is used by reuseTokenSource which

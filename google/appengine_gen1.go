@@ -23,7 +23,7 @@ func init() {
 	appengineAppIDFunc = appengine.AppID
 }
 
-// See comment on AppEngineTokenSource in appengine.go.
+// appEngineTokenSource; See comment on AppEngineTokenSource in appengine.go.
 func appEngineTokenSource(ctx context.Context, scope ...string) oauth2.TokenSource {
 	scopes := append([]string{}, scope...)
 	sort.Strings(scopes)

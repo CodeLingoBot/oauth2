@@ -110,7 +110,7 @@ func TestTransportTokenSource(t *testing.T) {
 	res.Body.Close()
 }
 
-// Test for case-sensitive token types, per https://github.com/golang/oauth2/issues/113
+// TestTransportTokenSourceTypes tests for case-sensitive token types, per https://github.com/golang/oauth2/issues/113
 func TestTransportTokenSourceTypes(t *testing.T) {
 	const val = "abc"
 	tests := []struct {
